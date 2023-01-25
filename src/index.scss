@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap');
 
 body {
   margin: 0;
@@ -79,7 +79,7 @@ code {
   }
 
   &__link {
-    color: #2D9CDB;
+    color: #2d9cdb;
     text-decoration: none;
   }
 }
@@ -149,5 +149,145 @@ code {
     &:hover {
       background: #2a72d1;
     }
+  }
+}
+
+.content {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px 72px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+
+    letter-spacing: -0.035em;
+
+    color: #000000;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 44px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+
+    letter-spacing: -0.035em;
+
+    color: #000000;
+  }
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-info {
+  box-sizing: border-box;
+
+  width: 850px;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+
+  &__block {
+    position: relative;
+
+    padding: 28px 50px;
+    padding-bottom: 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+
+    letter-spacing: -0.035em;
+
+    color: #000000;
+  }
+
+  &__subtitle {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.035em;
+
+    color: #828282;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 38px;
+
+    border: 1px solid #828282;
+    border-radius: 12px;
+
+    background-color: transparent;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    letter-spacing: -0.035em;
+
+    color: #828282;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #828282;
+      color: #ffffff;
+    }
+  }
+
+  &__type {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+
+    color: #bdbdbd;
+  }
+
+  &__value {
+    position: absolute;
+    left: 35%;
   }
 }
